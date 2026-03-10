@@ -247,7 +247,7 @@ export default function App() {
         </div>
       ))}
       <div className="scene">
-        <h1>🦄 Unicornio Veloz</h1>
+        <h1>🦄 2A Francisca Silva</h1>
         <div className="track">
           <div className="dust">
             {[0, 1, 2, 3].map((i) => (
@@ -269,7 +269,9 @@ export default function App() {
             <UnicornSVG />
           </div>
         </div>
-        <p className="status">{running ? "🌟 ¡A todo galope! 🌟" : "Presiona el botón para correr 🐴"}</p>
+        <p className="status">
+          {running ? "🌟 ¡Corre como el viento tiro al blanco! 🌟" : "Presiona el botón para correr 🐴"}
+        </p>
         <button className="btn" onClick={handleRun} disabled={running}>
           {running ? "⚡ Corriendo..." : "🏇 ¡Correr!"}
         </button>
